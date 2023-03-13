@@ -15,4 +15,5 @@ daysOfWeek.sort(function(a, b) {
   return days.indexOf(a) - days.indexOf(b);
 });
 
-console.log( + daysOfWeek); // ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+console.log(daysOfWeek); // ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+document.write(daysOfWeek)

@@ -11,7 +11,7 @@
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
-    color: green;
+    color: red;
   }
   
   .button {
@@ -43,6 +43,6 @@
     font-size: 2em;
     padding: 5px;
     font-weight: bold;
-    background-color: aqua;
-    color: blue;
+    background-color: lightgreen;
+    color: green;
   }

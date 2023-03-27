@@ -12,7 +12,7 @@ if(a==0){
    if(delta<0){
        document.write("phuong trinh vo nghiem");
 
-   }else /*delta >=0 or delta = 0*/ if(delta ==0){
+   }else  if(delta ==0){
        //delta=0
        let x = -b/(2*a);
        document.write("phuong trinh co nghiem kep:"+x);

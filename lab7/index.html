@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wraper">
+        <h1>Drag andand drop</h1>
+        <p>Drag the list items over the dustbin, and drop them to have the bin eat item</p>
+
+        <div class="body">
+            <div class="bin">
+                BIN
+            </div>
+            <div class="right">
+                <p class="item" id="one">one </p>
+                <p class="item" id="two">two</p>
+                <p class="item" id="three">three</p>
+                <p class="item" id="four">four</p>
+                <p class="item" id="five">five</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let items = document.getElementsByClassName("item");
+        for (let i = 0; i < length; i++) {
+            let item = items[i];
+            item.setAttribute("draggable", true);
+            item.addEventListener("draggstar", (e) => {
+                e.dataTransfer.setData("itemId", item.id);
+            });
+        }
+
+        let bin = document.getElementsByClassName("bin");
+        bin.addEventListener("dragover", (e) => {
+            if (e.preventDefault) e.preventDefault();
+        });
+
+        bin.addEventListener("drop", (e) => {
+            let itemId = e.dataTransfer.getData("itemId");
+            let item = document.getElementById(itemId);
+            bin.appendChild(item);
+        });
+    </script>
+</body>
+
+
+
+</html>

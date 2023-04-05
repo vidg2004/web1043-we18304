@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <input type="text" class="inputText" id="username">
+        <input type="text" class="inputText" id="password">
+    </div>
+    <script>
+        let username=document.getElementById("username");
+        let password=document.getElementById("password");
+
+        username.addEventListener("focus", () => {
+            username.classList.add("inputFocus");
+        });
+
+        username.addEventListener("blur", () => {
+            username.classList.remove("inputFocus");
+        });
+
+        password.addEventListener("focus", () => {
+            password.classList.add("inputFocus");
+        });
+
+        password.addEventListener("blur", () => {
+            password.classList.remove("inputFocus");
+        });
+    </script>
+</body>
+
+</html>

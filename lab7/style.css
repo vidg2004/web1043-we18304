@@ -1,0 +1,29 @@
+
+.wraper{
+    background-color: antiquewhite;
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+}
+.bin{
+    text-align: center;
+    line-height: 200px;
+    border: 5px solid ;
+    width: 100px;
+    margin: 20px;
+    height: 200px;
+}
+.right{
+   
+margin: 20px;
+
+}
+.item{
+ border: 2px dashed #000;
+ width: 50px;
+ text-align: center;
+}
